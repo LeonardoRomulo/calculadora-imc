@@ -8,10 +8,10 @@ export default function Card({
   onCalcular,
   resultado,
   status,
-  erro
+  erro,
 }) {
   return (
-    <div className={estilos.container_card}>
+    <div className={estilos.container}>
       <div className={estilos.card}>
         <h1>Calcule o seu IMC</h1>
         <div className={estilos.container_input}>
@@ -35,14 +35,14 @@ export default function Card({
             onChange={onPesoChange}
           />
         </div>
-        {resultado? (
-           <p>
-          Seu imc é: {resultado}<br/> você está: {status}
-        </p> ) : null};
+        {resultado ? (
+          <p>
+            Seu imc é: {resultado}
+            <br /> você está: {status}
+          </p>
+        ) : null}
 
-        {erro ?  (
-          <p style = {{color: 'red'}}> Erro: {erro}</p>
-        ):null};
+        {erro ? <p style={{ color: "red" }}> Erro: {erro}</p> : null}
         <button onClick={onCalcular} className={estilos.btn}>
           Calcular IMC
         </button>

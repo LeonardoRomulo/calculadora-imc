@@ -3,3 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+align-items: center;
+  padding: 6rem;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6dd5ed, #2193b0); /* Um gradiente azulado moderno */
+}

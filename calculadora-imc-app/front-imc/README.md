@@ -1,36 +1,95 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Calculadora de IMC 📊
 
-## Getting Started
+Uma aplicação web simples e moderna para calcular o Índice de Massa Corporal (IMC). O usuário insere sua altura e peso, e a aplicação retorna o valor do IMC juntamente com uma classificação do status (por exemplo, Abaixo do peso, Peso normal, Sobrepeso, etc.).
 
-First, run the development server:
+## ✨ Funcionalidades
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+*   Entrada de altura (em metros, ex: 1.75) e peso (em kg, ex: 68.5).
+*   Cálculo do IMC em tempo real.
+*   Exibição clara do resultado do IMC e do status correspondente.
+*   Interface de usuário limpa, responsiva e com design moderno.
+*   Validação de entrada para garantir que os valores sejam numéricos e dentro de um intervalo razoável (simulado na lógica de "serviço").
+*   Mensagens de erro amigáveis caso a entrada seja inválida.
+
+## 🚀 Tecnologias Utilizadas
+
+*   **Frontend:**
+    *   [React](https://reactjs.org/) (utilizando [Next.js](https://nextjs.org/) como framework)
+    *   JavaScript (ES6+)
+    *   CSS Modules para estilização escopada por componente.
+    *   HTML5
+
+## 📂 Estrutura do Projeto (Frontend)
+
+A parte do frontend da aplicação está localizada na pasta `front-imc` e segue uma estrutura típica de projetos Next.js:
+
+```
+calculadora-imc-app/
+└── front-imc/
+    ├── componentes/
+    │   └── Card/
+    │       ├── index.jsx           # Componente React do Card da calculadora
+    │       └── Card.module.css     # Estilos CSS para o Card
+    ├── public/                     # Arquivos estáticos
+    ├── src/
+    │   ├── app/
+    │   │   ├── globals.css         # Estilos globais da aplicação
+    │   │   ├── layout.js           # Layout principal da aplicação Next.js
+    │   │   ├── page.js             # Componente da página principal (Home)
+    │   │   ├── page.module.css     # Estilos CSS para a página principal
+    │   │   └── servicos/
+    │   │       └── app.js          # Lógica de negócio para o cálculo do IMC
+    ├── .eslintrc.json
+    ├── .gitignore
+    ├── jsconfig.json
+    ├── next.config.mjs
+    ├── package-lock.json
+    └── package.json
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Como Rodar o Projeto Localmente
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Siga os passos abaixo para executar a aplicação em seu ambiente de desenvolvimento:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1.  **Pré-requisitos:**
+    *   Node.js (versão 18.x ou superior recomendada)
+    *   npm (geralmente vem com o Node.js) ou yarn
 
-## Learn More
+2.  **Clone o repositório:**
+    ```bash
+    git clone https://github.com/LeonardoRomulo
+    cd calculadora-imc-app
+    ```
 
-To learn more about Next.js, take a look at the following resources:
+3.  **Navegue até a pasta do frontend:**
+    ```bash
+    cd front-imc
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4.  **Instale as dependências:**
+    ```bash
+    npm install
+    # ou
+    # yarn install
+    ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+5.  **Execute o servidor de desenvolvimento:**
+    ```bash
+    npm run dev
+    # ou
+    # yarn dev
+    ```
 
-## Deploy on Vercel
+6.  Abra seu navegador e acesse: `http://localhost:3000`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🖼️ Capturas de Tela (Opcional)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+*(Você pode adicionar aqui algumas imagens da sua aplicação em funcionamento)*
+
+## 👤 Autor
+
+*   **Leonardo** - https://github.com/LeonardoRomulo
+
+---
+
+Feito com muito café e código!
