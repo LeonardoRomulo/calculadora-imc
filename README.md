@@ -84,7 +84,9 @@ Siga os passos abaixo para executar a aplicação em seu ambiente de desenvolvim
 
 ## 🖼️ Capturas de Tela (Opcional)
 
-*(Você pode adicionar aqui algumas imagens da sua aplicação em funcionamento)*
+![image](https://github.com/user-attachments/assets/3bb924b0-7914-480b-8a35-49eea1dd1e94)
+![Captura de tela 2025-05-17 162820](https://github.com/user-attachments/assets/f740ae6d-07ff-4b11-84ec-cba18e455002)
+
 
 ## 👤 Autor
 
