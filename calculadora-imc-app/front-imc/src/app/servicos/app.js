@@ -1,5 +1,7 @@
 import axios from 'axios';
+import { useEffect }  from  'react';
 
+useEffect(() =>{
 async function calcularImc(peso,altura) {
     try {
         const endPoint = `http://localhost:8080/?peso=${peso}&altura=${altura}`
@@ -9,5 +11,7 @@ async function calcularImc(peso,altura) {
         return {error:`Dados inválidos: ${erro.message}`}
     }
 }
+
+}, altura, peso);
 
 export default calcularImc;
